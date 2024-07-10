@@ -5,6 +5,7 @@ import About from './About'
 import Contact from './Contact'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import Users from './Users'
 
 export default function Frontend() {
     return (
@@ -14,6 +15,7 @@ export default function Frontend() {
                 <Route path='/' element={<Home />} />
                 <Route path='about' element={<About />} />
                 <Route path='contact' element={<Contact />} />
+                <Route path='users' element={<Users />} />
                 <Route path='*' element={<h1>No Page, Page Not Found, 404 Error</h1>} />
             </Routes>
             <Footer />
